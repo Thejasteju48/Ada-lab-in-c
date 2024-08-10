@@ -41,7 +41,7 @@ void tester() {
     fgets(text, sizeof(text), stdin);
     text[strcspn(text, "\n")] = '\0'; 
 
-    stringmatching(text, pattern, m, n);
+    stringmatching(text, pattern, n, m);
     printf("Number of comparisons: %d\n", count);
 }
 
